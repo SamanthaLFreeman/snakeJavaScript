@@ -18,6 +18,10 @@ var snake;
     snake.update();
     snake.draw();
   }, 250)
+
+    if (snake.eat(fruit)) {
+      fruit.pickLocation();
+    }
 }());
 
 window.addEventListener("keydown", ((e) => {
