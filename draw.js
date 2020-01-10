@@ -9,9 +9,12 @@ var snake;
 
 (function setup() {
   snake = new Snake();
-
+  fruit = new Fruit();
+  fruit.pickLocation();
+  
   window.setInterval(() => {
     contextCanvas.clearRect(0, 0, canvas.width, canvas.height);
+    fruit.draw();
     snake.update();
     snake.draw();
   }, 250)

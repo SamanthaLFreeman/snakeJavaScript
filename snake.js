@@ -26,7 +26,7 @@ function Snake() {
     }
 
     if (this.y < 0) {
-      this.y = canvas.width;
+      this.y = canvas.height;
     }
   }
 
